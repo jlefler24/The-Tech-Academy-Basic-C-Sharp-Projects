@@ -1,0 +1,6 @@
+C:\Users\user\source\repos\LoopsAssignment\obj\Debug\LoopsAssignment.csprojAssemblyReference.cache
+C:\Users\user\source\repos\LoopsAssignment\bin\Debug\LoopsAssignment.exe.config
+C:\Users\user\source\repos\LoopsAssignment\bin\Debug\LoopsAssignment.exe
+C:\Users\user\source\repos\LoopsAssignment\bin\Debug\LoopsAssignment.pdb
+C:\Users\user\source\repos\LoopsAssignment\obj\Debug\LoopsAssignment.exe
+C:\Users\user\source\repos\LoopsAssignment\obj\Debug\LoopsAssignment.pdb
