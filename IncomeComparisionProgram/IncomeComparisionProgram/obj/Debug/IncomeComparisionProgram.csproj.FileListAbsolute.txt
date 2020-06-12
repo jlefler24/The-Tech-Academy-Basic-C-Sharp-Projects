@@ -1,0 +1,7 @@
+C:\Users\lefle\source\repos\IncomeComparisionProgram\IncomeComparisionProgram\bin\Debug\IncomeComparisionProgram.exe.config
+C:\Users\lefle\source\repos\IncomeComparisionProgram\IncomeComparisionProgram\bin\Debug\IncomeComparisionProgram.exe
+C:\Users\lefle\source\repos\IncomeComparisionProgram\IncomeComparisionProgram\bin\Debug\IncomeComparisionProgram.pdb
+C:\Users\lefle\source\repos\IncomeComparisionProgram\IncomeComparisionProgram\obj\Debug\IncomeComparisionProgram.csprojAssemblyReference.cache
+C:\Users\lefle\source\repos\IncomeComparisionProgram\IncomeComparisionProgram\obj\Debug\IncomeComparisionProgram.csproj.CoreCompileInputs.cache
+C:\Users\lefle\source\repos\IncomeComparisionProgram\IncomeComparisionProgram\obj\Debug\IncomeComparisionProgram.exe
+C:\Users\lefle\source\repos\IncomeComparisionProgram\IncomeComparisionProgram\obj\Debug\IncomeComparisionProgram.pdb
