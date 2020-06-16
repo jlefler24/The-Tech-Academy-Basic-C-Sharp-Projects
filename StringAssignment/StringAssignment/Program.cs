@@ -11,13 +11,18 @@ namespace StringAssignment
         static void Main(string[] args)
 
         {
-            //string name = "Jordan";
-            //string quote = "The man said, \\Hello\", Jordan. \n How are you doing? \n \t How is your c# course?";
+            string num1 = "I like to play";
+            string num2 = " flag football";
+            string num3 = " it is my favorite hobby.";
 
-            //name = name.ToUpper();
+          
+            Console.WriteLine(num1 + num2 + num3);
+            Console.ReadLine();
+            Console.WriteLine(num2.ToUpper());
+            Console.ReadLine();
             
 
-
+        
             StringBuilder sb = new StringBuilder();
 
            
