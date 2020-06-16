@@ -30,11 +30,11 @@ namespace MathAndComparisonOperators
 
 
 
-            int num5, num6 = (int)12.5d;
+            float num5, num6 = (float)12.5d;
             Console.Write("Enter a number: ");
             num5 = Convert.ToInt32(Console.ReadLine());
 
-            int divide = num5 / num6;
+            float divide = num5 / num6;
             Console.WriteLine("Output: {0} / {1} = {2}",
                                 num5, num6, divide);
 
