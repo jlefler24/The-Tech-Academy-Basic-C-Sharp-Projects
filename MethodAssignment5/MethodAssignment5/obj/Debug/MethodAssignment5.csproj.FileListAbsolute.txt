@@ -1,0 +1,7 @@
+C:\Users\lefle\source\repos\MethodAssignment5\MethodAssignment5\bin\Debug\MethodAssignment5.exe.config
+C:\Users\lefle\source\repos\MethodAssignment5\MethodAssignment5\bin\Debug\MethodAssignment5.exe
+C:\Users\lefle\source\repos\MethodAssignment5\MethodAssignment5\bin\Debug\MethodAssignment5.pdb
+C:\Users\lefle\source\repos\MethodAssignment5\MethodAssignment5\obj\Debug\MethodAssignment5.csprojAssemblyReference.cache
+C:\Users\lefle\source\repos\MethodAssignment5\MethodAssignment5\obj\Debug\MethodAssignment5.csproj.CoreCompileInputs.cache
+C:\Users\lefle\source\repos\MethodAssignment5\MethodAssignment5\obj\Debug\MethodAssignment5.exe
+C:\Users\lefle\source\repos\MethodAssignment5\MethodAssignment5\obj\Debug\MethodAssignment5.pdb

@@ -1,0 +1,7 @@
+C:\Users\lefle\source\repos\IterationAssignment\IterationAssignment\bin\Debug\IterationAssignment.exe.config
+C:\Users\lefle\source\repos\IterationAssignment\IterationAssignment\bin\Debug\IterationAssignment.exe
+C:\Users\lefle\source\repos\IterationAssignment\IterationAssignment\bin\Debug\IterationAssignment.pdb
+C:\Users\lefle\source\repos\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.csprojAssemblyReference.cache
+C:\Users\lefle\source\repos\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.csproj.CoreCompileInputs.cache
+C:\Users\lefle\source\repos\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.exe
+C:\Users\lefle\source\repos\IterationAssignment\IterationAssignment\obj\Debug\IterationAssignment.pdb

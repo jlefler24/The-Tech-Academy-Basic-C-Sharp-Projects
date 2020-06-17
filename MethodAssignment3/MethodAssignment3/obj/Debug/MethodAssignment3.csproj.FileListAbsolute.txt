@@ -1,0 +1,7 @@
+C:\Users\lefle\source\repos\MethodAssignment3\MethodAssignment3\obj\Debug\MethodAssignment3.csprojAssemblyReference.cache
+C:\Users\lefle\source\repos\MethodAssignment3\MethodAssignment3\obj\Debug\MethodAssignment3.csproj.CoreCompileInputs.cache
+C:\Users\lefle\source\repos\MethodAssignment3\MethodAssignment3\bin\Debug\MethodAssignment3.exe.config
+C:\Users\lefle\source\repos\MethodAssignment3\MethodAssignment3\bin\Debug\MethodAssignment3.exe
+C:\Users\lefle\source\repos\MethodAssignment3\MethodAssignment3\bin\Debug\MethodAssignment3.pdb
+C:\Users\lefle\source\repos\MethodAssignment3\MethodAssignment3\obj\Debug\MethodAssignment3.exe
+C:\Users\lefle\source\repos\MethodAssignment3\MethodAssignment3\obj\Debug\MethodAssignment3.pdb
