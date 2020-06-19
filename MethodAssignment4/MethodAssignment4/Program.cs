@@ -12,11 +12,9 @@ namespace MethodAssignment4
         {
             Class1 myObject = new Class1();
             Console.WriteLine("Please enter an integer: ");
-            string userInput = Console.ReadLine();
-            int intOne = Convert.ToInt32(userInput);
+            int intOne = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Please enter a second integer: ");
-            string userInput2 = Console.ReadLine();
-            int intTwo = Convert.ToInt32(userInput2);
+            int intTwo = Convert.ToInt32(Console.ReadLine());
 
             myObject.MyMethod(intOne, intTwo);
             Console.ReadLine();
