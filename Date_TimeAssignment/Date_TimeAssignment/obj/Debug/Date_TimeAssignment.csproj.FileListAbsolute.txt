@@ -1,0 +1,7 @@
+C:\Users\lefle\source\repos\Date_TimeAssignment\Date_TimeAssignment\bin\Debug\Date_TimeAssignment.exe.config
+C:\Users\lefle\source\repos\Date_TimeAssignment\Date_TimeAssignment\bin\Debug\Date_TimeAssignment.exe
+C:\Users\lefle\source\repos\Date_TimeAssignment\Date_TimeAssignment\bin\Debug\Date_TimeAssignment.pdb
+C:\Users\lefle\source\repos\Date_TimeAssignment\Date_TimeAssignment\obj\Debug\Date_TimeAssignment.csprojAssemblyReference.cache
+C:\Users\lefle\source\repos\Date_TimeAssignment\Date_TimeAssignment\obj\Debug\Date_TimeAssignment.csproj.CoreCompileInputs.cache
+C:\Users\lefle\source\repos\Date_TimeAssignment\Date_TimeAssignment\obj\Debug\Date_TimeAssignment.exe
+C:\Users\lefle\source\repos\Date_TimeAssignment\Date_TimeAssignment\obj\Debug\Date_TimeAssignment.pdb

@@ -6,18 +6,11 @@ using System.Threading.Tasks;
 
 namespace AbstractClass
 {
-    public class Employee<T> : Person/*, IQuittable*/
+    public class Employee : Person
     {
-        public int Id { get; set; }
-        public List<T> Things { get; set; }
-
-        public void Print()
+        public override void SayName()
         {
-            foreach (T thing in Things)
-            {
-                Console.WriteLine(thing);
-            }
-
+            Console.WriteLine("Name:  {0} {1}", firstName, lastName);
         }
     }
 }

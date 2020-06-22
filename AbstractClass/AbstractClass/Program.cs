@@ -10,24 +10,10 @@ namespace AbstractClass
     {
         static void Main(string[] args)
         {
-            Employee<string> employee = new Employee<string>();
-            employee.Things = new List<string>();
+            Employee employee = new Employee() { firstName = "Sample", lastName = "Student" };
 
-            employee.Things.Add("desk");
-            employee.Things.Add("table");
-            employee.Things.Add("book");
-
-            Employee<int> employee1 = new Employee<int>();
-            employee1.Things = new List<int>();
-
-            employee1.Things.Add(4);
-            employee1.Things.Add(416);
-            employee1.Things.Add(7);
-
-            employee.Print();
-            employee1.Print();
+            employee.SayName();
             Console.ReadLine();
-
         }
     }
 }

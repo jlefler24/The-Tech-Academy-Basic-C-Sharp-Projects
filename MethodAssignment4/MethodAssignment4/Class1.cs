@@ -15,6 +15,5 @@ namespace MethodAssignment4
             Console.WriteLine(intTwo);
             return;
         }
-
     }
 }
