@@ -4,17 +4,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TwentyOne
+namespace Casino
 {
-    public class Card
+    public struct Card
     {
-        public Card()
+        public Suit Suit { get; set; }
+        public Face Face { get; set; }
+
+        public override string ToString()
         {
-            Suit = "Spades";
-            Face = "";
+            return string.Format("{0} of {1}", Face, Suit);
         }
-        public string Suit { get; internal set; }
-        public string Face { get; internal set; }
+    }
+    public enum Suit
+    {
+        Clubs,
+        Diamonds,
+        Hearts,
+        Spades
+    }
+
+    public enum Face
+    {
+        Two,
+        Three,
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack,
+        Queen,
+        King,
+        Ace
 
     }
 }
