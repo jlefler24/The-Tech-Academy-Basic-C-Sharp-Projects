@@ -1,0 +1,7 @@
+C:\Users\lefle\source\repos\ConstAssignment\ConstAssignment\bin\Debug\ConstAssignment.exe.config
+C:\Users\lefle\source\repos\ConstAssignment\ConstAssignment\bin\Debug\ConstAssignment.exe
+C:\Users\lefle\source\repos\ConstAssignment\ConstAssignment\bin\Debug\ConstAssignment.pdb
+C:\Users\lefle\source\repos\ConstAssignment\ConstAssignment\obj\Debug\ConstAssignment.csprojAssemblyReference.cache
+C:\Users\lefle\source\repos\ConstAssignment\ConstAssignment\obj\Debug\ConstAssignment.csproj.CoreCompileInputs.cache
+C:\Users\lefle\source\repos\ConstAssignment\ConstAssignment\obj\Debug\ConstAssignment.exe
+C:\Users\lefle\source\repos\ConstAssignment\ConstAssignment\obj\Debug\ConstAssignment.pdb
