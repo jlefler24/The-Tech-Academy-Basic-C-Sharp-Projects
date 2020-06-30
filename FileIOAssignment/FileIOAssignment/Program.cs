@@ -8,18 +8,28 @@ using System.Threading.Tasks;
 namespace FileIOAssignment
 {
     class Program
-{
-    static void Main(string[] args)
     {
-        int userInput;
-        Console.WriteLine("Please enter any number");
-        userInput = Convert.ToInt32(Console.ReadLine());
-        using (StreamWriter file = new StreamWriter(@"C:\Users\lefle\source\repos\FileIOAssignment\log.txt", true))
+        static void Main(string[] args)
         {
-            file.WriteLine(userInput);
+            Console.WriteLine("Please enter any number");
+            int userInput = Convert.ToInt32(Console.ReadLine());
+            using (StreamWriter file = new StreamWriter(@"C:\Users\lefle\OneDrive\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\FileIOAssignment\log.txt", true))
+            {
+                file.WriteLine(userInput);
+            }
+
+            using (StreamReader readFile = new StreamReader(@"C:\Users\lefle\OneDrive\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\FileIOAssignmentlog.txt"))
+            {
+                string line = readFile.ReadLine();
+                while (line != null)
+                {
+                    Console.WriteLine(line);
+                    line = readFile.ReadLine();
+                }
+                readFile.Close();
+            }
+            Console.ReadLine();
+
         }
-        Console.WriteLine("Your number is " + userInput);
-        Console.ReadLine();
     }
-}
 }
