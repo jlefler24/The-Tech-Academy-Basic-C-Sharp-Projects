@@ -3,7 +3,6 @@ using System.IO;
 using Casino;
 using Casino.TwentyOne;
 
-
 namespace TwentyOne
 {
     class Program
@@ -46,5 +45,9 @@ namespace TwentyOne
             Console.Read();
         }
 
+        private static void UpdatedbWithException(Exception ex)
+        {
+            string connectinString = @ "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=TwentyOneGame;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"
+        }
     }
 }

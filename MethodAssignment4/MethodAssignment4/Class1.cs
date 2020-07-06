@@ -8,12 +8,11 @@ namespace MethodAssignment4
 {
     public class Class1
     {
-        public void MyMethod(int intOne, int intTwo)
-        {
-            int result = intOne * 11;
-            Console.WriteLine(intOne + " multiplied by 11 = " + result);
-            Console.WriteLine(intTwo);
-            return;
-        }
+      
+
+            public static void MyMethod(int intOne, out int result)
+            {
+                result = intOne * 8;
+            }
     }
 }

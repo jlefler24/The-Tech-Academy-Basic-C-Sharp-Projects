@@ -8,17 +8,20 @@ namespace MethodAssignment4
 {
     class Program
     {
+        private static int result;
+
         static void Main()
         {
-            Class1 myObject = new Class1();
+
             Console.WriteLine("Please enter an integer: ");
-            string userIn1 = Console.ReadLine();
-            int intOne = Convert.ToInt32(userIn1);
+            int intOne = Convert.ToInt32(Console.ReadLine());
+            Class1.MyMethod(intOne, out result);
+            
+
             Console.WriteLine("Please enter a second integer: ");
             string userIn2 = Console.ReadLine();
-            int intTwo = Convert.ToInt32(userIn2);
+            int intTwo = Convert.ToInt32(Console.ReadLine());
 
-            myObject.MyMethod(intOne, intTwo);
             Console.ReadLine();
         }
     }
