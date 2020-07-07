@@ -22,11 +22,25 @@ namespace Casino.TwentyOne
             Dealer.Stay = false;
             Dealer.Deck = new Deck();
             Dealer.Deck.Shuffle();
-            Console.WriteLine("Place your bet!");
+
 
             foreach (Player player in Players)
             {
-                int bet = Convert.ToInt32(Console.ReadLine());
+                bool validAnswer = false;
+                int bet = 0;
+                while (!validAnswer)
+                {
+                    Console.WriteLine("Place your bet!");
+                    validAnswer = int.TryParse(Console.ReadLine(), out bet);
+                    if (!validAnswer)
+                    {
+                        Console.WriteLine("Please use only use digits, do not use decimals."); 
+                    }
+                }
+                if (bet < 0)
+                {
+                    throw new FraudException("Security! Kick this person out."); 
+                }                                                                
                 bool successfullyBet = player.Bet(bet);
                 if (!successfullyBet)
                 {
@@ -51,7 +65,6 @@ namespace Casino.TwentyOne
                             return;
                         }
                     }
-
                 }
                 Console.Write("Dealer: ");
                 Dealer.Deal(Dealer.Hand);
@@ -60,7 +73,7 @@ namespace Casino.TwentyOne
                     bool blackJack = TwentyOneRules.CheckForBlackJack(Dealer.Hand);
                     if (blackJack)
                     {
-                        Console.WriteLine("Dealer has BlackJack! Everyone loses!");
+                        Console.WriteLine("Dealer has Blackjack! Everyone loses!");
                         foreach (KeyValuePair<Player, int> entry in Bets)
                         {
                             Dealer.Balance += entry.Value;
@@ -76,9 +89,9 @@ namespace Casino.TwentyOne
                     Console.WriteLine("Your cards are: ");
                     foreach (Card card in player.Hand)
                     {
-                        Console.WriteLine("{0}", card.ToString());
+                        Console.WriteLine("{0} ", card.ToString());
                     }
-                    Console.WriteLine("\n\nHit or stay?");
+                    Console.WriteLine("\n\nHit or Stay?");
                     string answer = Console.ReadLine().ToLower();
                     if (answer == "stay")
                     {
@@ -88,6 +101,7 @@ namespace Casino.TwentyOne
                     else if (answer == "hit")
                     {
                         Dealer.Deal(player.Hand);
+
                     }
                     bool busted = TwentyOneRules.IsBusted(player.Hand);
                     if (busted)
@@ -96,14 +110,14 @@ namespace Casino.TwentyOne
                         Console.WriteLine("{0} Busted! You lose your bet of {1}. Your balance is now {2}.", player.Name, Bets[player], player.Balance);
                         Console.WriteLine("Do you want to play again?");
                         answer = Console.ReadLine().ToLower();
-                        if (answer == "yes" || answer == "yeah")
+                        if (answer == "yes" || answer == "yeah" || answer == "y")
                         {
-                            player.IsActivelyPlaying = true;
+                            player.isActivelyPlaying = true;
                             return;
                         }
                         else
                         {
-                            player.IsActivelyPlaying = false;
+                            player.isActivelyPlaying = false;
                             return;
                         }
                     }
@@ -113,7 +127,7 @@ namespace Casino.TwentyOne
             Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
             while (!Dealer.Stay && !Dealer.isBusted)
             {
-                Console.WriteLine("Dealer is hitting...");
+                Console.WriteLine("Dealer is hitting!");
                 Dealer.Deal(Dealer.Hand);
                 Dealer.isBusted = TwentyOneRules.IsBusted(Dealer.Hand);
                 Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
@@ -124,7 +138,7 @@ namespace Casino.TwentyOne
             }
             if (Dealer.isBusted)
             {
-                Console.WriteLine("Dealer Busted!");
+                Console.WriteLine("Dealer busted!");
                 foreach (KeyValuePair<Player, int> entry in Bets)
                 {
                     Console.WriteLine("{0} won {1}!", entry.Key.Name, entry.Value);
@@ -132,7 +146,6 @@ namespace Casino.TwentyOne
                     Dealer.Balance -= entry.Value;
                 }
                 return;
-
             }
             foreach (Player player in Players)
             {
@@ -144,35 +157,35 @@ namespace Casino.TwentyOne
                 }
                 else if (playerWon == true)
                 {
-                    Console.WriteLine("{0} won {1}!", player.Name, Bets[player]);
+                    Console.WriteLine("{0}, won {1}!", player.Name, Bets[player]);
                     player.Balance += (Bets[player] * 2);
                     Dealer.Balance -= Bets[player];
                 }
                 else
                 {
                     Console.WriteLine("Dealer wins {0}!", Bets[player]);
+                    Dealer.Balance += Bets[player];
                 }
-                Console.WriteLine("Play again?");
+
+                Console.WriteLine("Play Again?");
                 string answer = Console.ReadLine().ToLower();
-                if (answer == "yes" || answer == "yeah")
+                if (answer == "yes" || answer == "yeah" || answer == "y")
                 {
-                    player.IsActivelyPlaying = true;
+                    player.isActivelyPlaying = true;
                 }
                 else
                 {
-                    player.IsActivelyPlaying = false;
+                    player.isActivelyPlaying = false;
                 }
             }
+
+
         }
-
-
-
         public override void ListPlayers()
         {
-            Console.WriteLine("21 Players: ");
+            Console.WriteLine("21 Players:");
             base.ListPlayers();
         }
-
         public void WalkAway(Player player)
         {
             throw new NotImplementedException();

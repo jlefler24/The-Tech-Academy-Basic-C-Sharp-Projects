@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace MethodAssignment4
 {
-    public class Class1
+    public class Math1
     {
-      
-
-            public static void MyMethod(int intOne, out int result)
-            {
-                result = intOne * 8;
-            }
+        public void MathMethod(int num1, int num2)
+        {
+            int result = num1 + 100;
+            Console.WriteLine(num2);
+        }
     }
 }

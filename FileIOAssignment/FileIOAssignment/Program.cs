@@ -7,29 +7,21 @@ using System.Threading.Tasks;
 
 namespace FileIOAssignment
 {
-    class Program
-    {
+        class Program
+        {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter any number");
-            int userInput = Convert.ToInt32(Console.ReadLine());
-            using (StreamWriter file = new StreamWriter(@"C:\Users\lefle\OneDrive\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\FileIOAssignment\log.txt", true))
+            Console.WriteLine("Enter a number.");
+            int userNum = Convert.ToInt32(Console.ReadLine());
+
+            using (StreamWriter file = new StreamWriter(@"C:\Users\lefle\OneDrive\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\FileIOAssignment\FileIOAssignment\log.txt", true))
             {
-                file.WriteLine(userInput);
+                file.WriteLine(userNum);
             }
 
-            using (StreamReader readFile = new StreamReader(@"C:\Users\lefle\OneDrive\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\FileIOAssignmentlog.txt"))
-            {
-                string line = readFile.ReadLine();
-                while (line != null)
-                {
-                    Console.WriteLine(line);
-                    line = readFile.ReadLine();
-                }
-                readFile.Close();
-            }
+            string text = File.ReadAllText(@"C:\Users\lefle\OneDrive\Documents\GitHub\The-Tech-Academy-Basic-C-Sharp-Projects\FileIOAssignment\FileIOAssignment\log.txt");
+            Console.WriteLine(text);
             Console.ReadLine();
-
         }
     }
 }

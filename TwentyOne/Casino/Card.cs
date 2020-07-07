@@ -15,15 +15,15 @@ namespace Casino
         {
             return string.Format("{0} of {1}", Face, Suit);
         }
+
     }
     public enum Suit
     {
         Clubs,
         Diamonds,
-        Hearts,
-        Spades
+        Spades,
+        Hearts
     }
-
     public enum Face
     {
         Two,
@@ -39,6 +39,5 @@ namespace Casino
         Queen,
         King,
         Ace
-
     }
 }
